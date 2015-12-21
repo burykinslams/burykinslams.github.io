@@ -27,20 +27,28 @@
 			padding: 0;
 			height: 100%;
 		}
+		.clearfix:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
 		.content{
 			background: url(img/bg.jpg);
 			width: 100%;
 			height: 100%;
 			background-size: cover;
-			padding-top: 350px;
+			/*padding-top: 350px;*/
 			box-sizing: border-box;
 		}
 		/*------------MY INFO--------------*/
 		.my-info {
-			margin-top: -294px;
+			box-sizing: border-box;
+			/*margin-top: -294px;*/
 			text-align: center;
 			color: #282828;
 			font: 1em 'exo-thin', Arial, sans-serif;
+			padding: 60px 0;
+			height: 55%;
 		}
 		.avatar {
 			height: 100px;
@@ -66,8 +74,11 @@
 			padding: 10px 30px;
 			background-color: #ff6d6d;
 			border-radius: 4px;
-			margin: 20px 0 50px;
+			margin: 20px 0 0;
 			font-family: 'exo-medium';
+		}
+		.contact-link:hover {
+			background-color: #D85555;
 		}
 		/*------------NAV BAR--------------*/
 		.nav-bar {
@@ -106,7 +117,8 @@
 			background: url(img/bg.jpg);
 			width: 100%;
 			max-width: 1024px;
-			height: 100%;
+			height: 45%;
+			/*height: 100%;*/
 			background-size: cover;
 			margin: auto;
 		}
@@ -114,12 +126,12 @@
 			padding-top: 50px;
 			text-align: center;
 			font: 1.6em 'exo-medium', Arial sans-serif;
-			height: 50px;
 			float: left;
 			width: 25%;
+			box-sizing: border-box;
 		}
 		.item-descr {
-			font: 0.7em 'exo-thin', Arial, sans-serif;
+			font: 0.7em/1.2em 'exo-thin', Arial, sans-serif;
 			margin: 10px;
 			}
 		.item-link {
@@ -131,6 +143,33 @@
 			border-radius: 4px;
 			margin: 10px 0;
 			font: 0.5em 'exo-medium';
+		}
+		.item-link:hover {
+			background-color: #D85555;
+		}
+		@media (max-width: 768px) {
+			.my-info {
+				height: 50%
+			}
+			.my-works {
+				height: 50%
+			}
+			.my-works-item {
+				padding-top: 30px;
+				width: 50%;
+			}
+		}
+		@media (max-width: 380px) {
+			.my-info {
+				height: 53%
+			}
+			.my-works {
+				height: auto;
+			}
+			.my-works-item {
+				padding-top: 30px;
+				width: 100%;
+			}
 		}
 	</style>
 </head>
@@ -144,8 +183,8 @@
 			<p class="position">Front-End Developer</p>
 			<a href="mailto:burykinslams@gmail.com" class="contact-link">contact me</a>
 		</div>
-		<div class="my-works">
-			<div class="nav-bar">
+		<div class="my-works clearfix">
+			<div class="nav-bar clearfix">
 				<div class="nav-bar-menu">
 					<div class="nav-bar-spare nav-bar-dash"></div>
 					<div class="nav-bar-spare nav-bar-dash"></div>
@@ -165,12 +204,12 @@
 			</div>
 			<div class="my-works-item">
 				<div class="item-name">Flex-Pro</div>
-				<div class="item-descr">Landing Page (SASS)</div>
+				<div class="item-descr">Landing Page (Sass)</div>
 				<a href="projects/flexpro/index.html" class="item-link">view</a>
 			</div>
 			<div class="my-works-item">
 				<div class="item-name">Marine</div>
-				<div class="item-descr">Landing Page (SASS)</div>
+				<div class="item-descr">Landing Page (Sass)</div>
 				<a href="projects/marine/index.html" class="item-link">view</a>
 			</div>
 			<div class="my-works-item">
