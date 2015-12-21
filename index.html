@@ -2,9 +2,183 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>test</title>
+	<title>portfolio</title>
+	<style>
+	@font-face {
+		font-family: exo-thin;
+		src: url('font/exo-thin-webfont.eot'); /* IE9 Compat Modes */
+		src: url('font/exo-thin-webfont.eot?#iefix') format('embedded-opentype'),
+			 url('font/exo-thin-webfont.woff2') format('woff2'),
+			 url('font/exo-thin-webfont.woff') format('woff'),
+			 url('font/exo-thin-webfont.ttf')  format('truetype'),
+			 url('font/exo-thin-webfont.svg#svgexo-thin-webfont') format('svg');
+		}
+	@font-face {
+		font-family: exo-medium;
+		src: url('font/exo-medium-webfont.eot'); /* IE9 Compat Modes */
+		src: url('font/exo-medium-webfont.eot?#iefix') format('embedded-opentype'),
+			 url('font/exo-medium-webfont.woff2') format('woff2'),
+			 url('font/exo-medium-webfont.woff') format('woff'),
+			 url('font/exo-medium-webfont.ttf')  format('truetype'),
+			 url('font/exo-medium-webfont.svg#svgexo-thin-webfont') format('svg');
+		}
+		body,html {
+			margin: 0;
+			padding: 0;
+			height: 100%;
+		}
+		.content{
+			background: url(img/bg.jpg);
+			width: 100%;
+			height: 100%;
+			background-size: cover;
+			padding-top: 350px;
+			box-sizing: border-box;
+		}
+		/*------------MY INFO--------------*/
+		.my-info {
+			margin-top: -294px;
+			text-align: center;
+			color: #282828;
+			font: 1em 'exo-thin', Arial, sans-serif;
+		}
+		.avatar {
+			height: 100px;
+			width: 100px;
+			margin: auto;
+		}
+		.avatar img {
+			border-radius: 50%;
+			width: 100%;
+			height: auto;
+		}
+		.name {
+			font-size: 2em;
+			margin: 20px;
+		}
+		.position {
+			margin: 10px 0 0;
+		}
+		.contact-link {
+			color: #fff;
+			text-decoration: none;
+			display: inline-block;
+			padding: 10px 30px;
+			background-color: #ff6d6d;
+			border-radius: 4px;
+			margin: 20px 0 50px;
+			font-family: 'exo-medium';
+		}
+		/*------------NAV BAR--------------*/
+		.nav-bar {
+			height: 24px;
+			width: 100%;
+			background-color: rgba(0,0,0, .4);
+			border-radius: 4px 4px 0 0;
+			text-align: center;
+			font: 12px/24px 'exo-medium', Arial, sans-serif;
+			color: rgba(255,255,255, .5);
+		}
+		.nav-bar-menu {
+			float: right;
+			margin: 5px 10px;
+		}
+		.nav-bar-cntrl {
+			float: left;
+			margin: 8px 10px;
+		}
+		.nav-bar-dash {
+			background-color: rgba(255,255,255, .5);
+			width: 16px;
+			height: 2px;
+			margin: 2px;
+		}
+		.nav-bar-circle {
+			float: left;
+			margin-left: 2px;
+			height: 4px;
+			width: 4px;
+			border-radius: 50%;
+			border: 2px solid rgba(255,255,255, .5);
+		}
+		/*------------MY INFO--------------*/
+		.my-works {
+			background: url(img/bg.jpg);
+			width: 100%;
+			max-width: 1024px;
+			height: 100%;
+			background-size: cover;
+			margin: auto;
+		}
+		.my-works-item {
+			padding-top: 50px;
+			text-align: center;
+			font: 1.6em 'exo-medium', Arial sans-serif;
+			height: 50px;
+			float: left;
+			width: 25%;
+		}
+		.item-descr {
+			font: 0.7em 'exo-thin', Arial, sans-serif;
+			margin: 10px;
+			}
+		.item-link {
+			color: #fff;
+			text-decoration: none;
+			display: inline-block;
+			padding: 5px 20px;
+			background-color: #ff6d6d;
+			border-radius: 4px;
+			margin: 10px 0;
+			font: 0.5em 'exo-medium';
+		}
+	</style>
 </head>
 <body>
-	<p>hello world</p>
+	<div class="content">
+		<div class="my-info">
+			<div class="avatar">
+				<img src="img/avatar.jpg" alt="">
+			</div>
+			<p class="name">Burykin Alexander</p>
+			<p class="position">Front-End Developer</p>
+			<a href="mailto:burykinslams@gmail.com" class="contact-link">contact me</a>
+		</div>
+		<div class="my-works">
+			<div class="nav-bar">
+				<div class="nav-bar-menu">
+					<div class="nav-bar-spare nav-bar-dash"></div>
+					<div class="nav-bar-spare nav-bar-dash"></div>
+					<div class="nav-bar-spare nav-bar-dash"></div>
+				</div>
+				<span>my-works</span>
+				<div class="nav-bar-cntrl">
+					<div class="nav-bar-spare nav-bar-circle"></div>
+					<div class="nav-bar-spare nav-bar-circle"></div>
+					<div class="nav-bar-spare nav-bar-circle"></div>	
+				</div>
+			</div>
+			<div class="my-works-item">
+				<div class="item-name">Golden</div>
+				<div class="item-descr">Adaptive LP</div>
+				<a href="projects/golden/index.html" class="item-link">view</a>
+			</div>
+			<div class="my-works-item">
+				<div class="item-name">Flex-Pro</div>
+				<div class="item-descr">Landing Page (SASS)</div>
+				<a href="projects/flexpro/index.html" class="item-link">view</a>
+			</div>
+			<div class="my-works-item">
+				<div class="item-name">Marine</div>
+				<div class="item-descr">Landing Page (SASS)</div>
+				<a href="projects/marine/index.html" class="item-link">view</a>
+			</div>
+			<div class="my-works-item">
+				<div class="item-name">Nova</div>
+				<div class="item-descr">Promo Block</div>
+				<a href="projects/nova/index.html" class="item-link">view</a>
+			</div>
+		</div>
+	</div>
 </body>
 </html>

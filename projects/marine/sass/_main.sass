@@ -1,0 +1,310 @@
+*, *:after, *:before
+	+box-sizing(border-box)
+.clearfix
+	&:before, &:after
+		content: " "
+		display: table
+.clearfix:after, .container:after, .container-fluid:after, .row:after
+	clear: both
+.left
+	float: left
+.right
+	float: right
+.container
+	margin: auto
+	width: 1170px
+header
+	background-color: #000e19
+.header-top
+	background-color: #001a2e
+	ul
+		li
+			height: 50px
+			float: left
+			border-right: 1px solid #000
+			a
+				display: block
+				height: 50px
+				color: #fff
+				font: bold 13px/50px Arial, sans-serif
+				text-decoration: none
+				padding: 0 20px 0 18px
+				i
+					vertical-align: middle
+					margin: 0 10px 5px -2px
+			&:hover
+				+background-image(linear-gradient(to top, #002b4f, #014782))
+				border-top: 1px solid #0166b8
+			&:last-child
+				border-right: 0
+				border-left: 1px solid #000
+				float: right
+				a
+					font: 22px/50px 'Racing Sans One', cursive
+					i
+						font-size: 21px
+						color: #505050
+						margin: 0 0 0 10px
+.header-mid
+	padding: 50px 0
+.logo
+	line-height: 0
+	float: left
+.phone
+	float: right
+	color: #fff
+	font: bold 26px/50px Arial, sans-serif
+	height: 50px
+	padding-top: 5px
+	margin-right: 35px
+	i
+		vertical-align: middle
+.search
+	float: right
+	height: 50px
+	width: 23.1%
+	margin-right: 45px
+	position: relative
+	input[type="text"]
+		padding-left: 5px
+		font: 20px/50px Arial, sans-serif
+		color: #666
+		outline: 0
+		width: 100%
+		height: 50px
+		border: 1px solid #d7d7d7
+	input[type="submit"]
+		cursor: pointer
+		outline: 0
+		height: 50px
+		width: 50px
+		position: absolute
+		top: 0
+		right: 0
+		border: 0
+		border-left: 1px solid #d7d7d7
+		background-color: #fdfdfd
+		background: url(../img/search.png) no-repeat center
+.cart
+	a
+		color: #fff
+		display: block
+		text-decoration: none
+	float: right
+	height: 50px
+	width: 18.85%
+	background-color: #02a8f6
+	font: bold 13px/50px Arial, sans-serif
+	i
+		vertical-align: middle
+		margin: 0px 10px 5px
+	span
+		font-size: 21px
+		margin-left: 15px
+nav
+	+background-image(linear-gradient(to top, #002b4f, #014782))
+	border-top: 1px solid #0166b8
+	border-bottom: 1px solid #000f1b
+	ul
+		li
+			float: left
+			&:first-child
+				border-left: 1px solid #174f7f
+			a
+				height: 60px
+				border-right: 1px solid #174f7f
+				display: inline-block
+				text-decoration: none
+				color: #fff
+				font: bold 14px/60px Arial, sans-serif
+				padding: 0 25px
+				position: relative
+				.fa-2x
+					font-size: 21px
+				&:hover
+					background-color: #02a8f6
+					&:after
+						position: absolute
+						content: ""
+						width: 100%
+						display: inline-block
+						left: 0
+						bottom: 0
+						border-bottom: 8px solid #001a2e
+.slider
+	margin-top: 30px
+	position: relative
+	.slick-prev,
+	.slick-next
+		border: none
+		cursor: pointer
+		font-size: 0
+		height: 75px
+		width: 40px
+		line-height: 0
+		margin-top: -37px
+		outline: 0
+		position: absolute
+		top: 50%
+		z-index: 1
+	.slick-next
+		right: 0
+		background: url(../img/slick-next.png) no-repeat center
+	.slick-prev
+		background: url(../img/slick-prev.png) no-repeat center
+.slide-img
+	height: 400px
+	width: 62%
+	position: relative
+	&:before
+		content: ""
+		position: absolute
+		top: 0
+		left: 0
+		background: url(../img/offer.png) no-repeat
+		height: 140px
+		width: 280px
+.slide-text
+	height: 400px
+	width: 38%
+	padding: 125px 80px 0 40px
+	color: #fff
+	background-color: #001c32
+	font: italic 15px Arial, sans-serif
+.slide-name
+	font-size: 34px
+	span
+		font-weight: bold
+.slide-descr
+	a
+		color: #fff
+		font-weight: bold
+.products-wrap
+	margin: 30px -15px
+.products-item
+	padding: 0 15px
+	width: 33.33%
+	float: left
+	position: relative
+	img
+		width: 100%
+		height: auto
+	p
+		+background-image(linear-gradient(to top, #002c4f, #014782))
+		border-bottom: 1px solid #000f1b
+		border-top: 1px solid #0166b8
+		bottom: 20px
+		color: #fff
+		font: bold italic 33px/46px Arial,sans-serif
+		height: 48px
+		left: 39px
+		padding-left: 15px
+		position: absolute
+		width: 70%
+	&:after
+		content: ""
+		position: absolute
+		bottom: 20px
+		left: 15px
+		border-right: 24px solid #001c32
+		height: 48px
+.featured,.specials
+	margin-bottom: 10px
+	h3
+		font: bold 17px Arial, sans-serif
+		width: 100%
+		text-align: left
+		padding-bottom: 20px
+		border-bottom: 1px solid #d7d7d7
+		margin-bottom: 30px 
+.featured-item-wrap
+	margin: 0 -15px
+.featured-item
+	float: left
+	margin: 15px
+	.img-wrap,
+	.actions
+		border: 1px solid #d7d7d7
+		+border-radius(1px)
+	.img-wrap
+		padding: 10px 0 15px
+		img
+			width: 100%
+			height: auto
+	.descr
+		font: italic 13px Arial, sans-serif
+		margin: 20px 0 40px
+	width: 170px
+.featured-price
+	margin-top: 30px
+	float: right
+	color: #fff
+	font: 22px/40px 'Racing Sans One', cursive
+	width: 125px
+	height: 40px
+	+background-image(linear-gradient(to top, #002b4f, #014782))
+	border-top: 1px solid #0166b8
+	border-bottom: 1px solid #000f1b
+	text-align: center
+.actions
+	text-align: center
+	font-size: 12px
+	div
+		width: 33.33%
+		float: left
+		padding: 10px
+		&:nth-child(2)
+			border-right: 1px solid #d7d7d7
+			border-left: 1px solid #d7d7d7
+	a
+		i
+			color: #7e7e7e
+			&:hover
+				color: #001c32
+	.fa-shopping-cart
+
+.specials-price
+	@extend .featured-price
+	height: 60px
+	text-align: left
+	line-height: 20px
+	padding: 5px 0 0 10px
+	span
+		font: italic 17px Arial,sans-serif
+		text-decoration: line-through
+.footer
+	background-color: #001c32
+.footer-wrap
+	padding-top: 50px
+	margin: 0 -15px
+.footer-item
+	float: left
+	margin: 15px
+	color: #fff
+	width: 170px
+	p
+		font: bold 14px Arial,sans-serif
+		padding-bottom: 20px
+		margin-bottom: 15px
+		border-bottom: 1px solid #162f43
+	a
+		color: #fff
+		text-decoration: none
+		font: 13px/28px Arial, sans-serif
+		&:hover
+			font-weight: bold
+	.support
+		color: #02a8f6
+		border: 0
+		font: 13px/20px Arial,sans-serif
+		.fa-2x
+			font-size: 36px
+			display: block
+			float: left
+			margin-right: 10px
+.bot-line
+	color: #fff
+	background-color: #000e19
+	font: 13px/50px Arial,sans-serif
+	span
+		color: #02a8f6

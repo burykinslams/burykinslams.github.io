@@ -1,0 +1,115 @@
+/* Welcome to Compass. In this file you should write your main styles. (or centralize your imports) Import this file using the following HTML or equivalent: <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
+
+html { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+caption, th, td { text-align: left; font-weight: normal; vertical-align: middle; }
+
+q, blockquote { quotes: none; }
+q:before, q:after, blockquote:before, blockquote:after { content: ""; content: none; }
+
+a img { border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
+
+@font-face { font-family: "bebasneue-bold"; src: url(fonts/bebasneue_bold-webfont.eot); src: url(fonts/bebasneue_bold-webfont.eot?#iefix) format(embedded-opentype), url(fonts/bebasneue_bold-webfont.woff) format(woff), url(fonts/bebasneue_bold-webfont.woff2) format(woff2), url(fonts/bebasneue_bold-webfont.ttf) format(truetype), url(fonts/bebasneue_bold-webfont.svg#bebasneue_bold-webfont) format(svg); font-weight: normal; font-size: normal; }
+body { font: 16px bebasneue-bold, Arial, sans-serif; min-width: 320px; }
+
+*, *:after, *:before { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+
+.clearfix:after, .container:after, .container-fluid:after, .row:after { clear: both; }
+
+.container { margin: auto; max-width: 1000px; width: 100%; }
+
+.is-active { position: relative; }
+.is-active a { text-decoration: none; }
+.is-active:after { border-bottom: 16px solid #fff; border-left: 16px solid transparent; border-right: 16px solid transparent; bottom: 0; content: ""; height: 0; margin-right: -16px; position: absolute; right: 50%; width: 0; }
+
+nav { background: url(../img/nav-bg.jpg) no-repeat; background-size: 100% 100%; width: 100%; }
+nav ul { text-align: center; width: 100%; }
+nav ul li { display: inline-block; }
+nav ul li a { color: #fff; display: block; font-size: 1.25em; padding: 15px 23px; text-transform: uppercase; }
+nav ul li a:hover { text-decoration: none; }
+
+header .container { padding: 50px 0; }
+header .container div { display: inline-block; vertical-align: middle; }
+
+.logo { border-right: 1px solid #ffc700; float: left; padding-right: 20px; }
+
+.description { font: 300 1.125em Open Sans, Arial, sans-serif; padding-left: 20px; }
+
+.feedback { float: right; }
+.feedback p { font-size: 1.75em; margin: -20px 0 10px; text-align: right; }
+
+.feedback-btn { text-shadow: rgba(0, 0, 0, 0.35) 1px 1px 2px; background: url(../img/btn-bg.png) no-repeat; background-size: 100% 100%; color: #fff; display: inline-block; font: 0.75em Tahoma, Arial, sans-serif; padding: 19px 24px; text-align: center; text-decoration: none; }
+.feedback-btn:hover { color: #ccc; }
+
+.content { background-color: #f6f6f6; padding: 65px 0 40px; width: 100%; }
+
+.content-banner { float: left; padding-right: 40px; width: 47%; }
+.content-banner img { height: auto; width: 100%; }
+
+.img-wrap { display: inline-block; position: relative; }
+.img-wrap:after { background: url(../img/discount.png) no-repeat; background-size: 100% 100%; bottom: -2%; content: ""; display: inline-block; height: 45%; left: -15%; position: absolute; width: 60%; }
+
+.content-info { float: right; font-size: 3.25em; text-align: left; width: 53%; }
+.content-info span { color: #d60000; }
+
+.delivery { border-top: 2px dashed #e3e3e3; color: #777777; font-size: 0.615em; margin-top: 20px; padding-top: 20px; }
+
+.main-form { clear: both; display: block; padding-top: 50px; width: 100%; }
+.main-form label { float: left; font-size: 2em; position: relative; text-align: left; width: 47%; }
+.main-form label span { color: #777777; font-size: 0.4375em; text-transform: uppercase; }
+.main-form label:after { background: url(../img/arrow.png); content: ""; display: block; height: 79px; left: 65%; position: absolute; width: 141px; }
+.main-form .actions { float: right; text-align: center; width: 53%; }
+.main-form .actions input[type="text"] { -moz-box-shadow: inset rgba(0, 0, 0, 0.6) 0px 0px 2px; -webkit-box-shadow: inset rgba(0, 0, 0, 0.6) 0px 0px 2px; box-shadow: inset rgba(0, 0, 0, 0.6) 0px 0px 2px; border-radius: 4px; border: 1px solid #c6c6c6; color: #544C4C; display: inline-block; font: 1.125em bebasneue-bold, Arial, sans-serif; height: 45px; margin-bottom: 10px; padding-left: 10px; width: 48.6%; }
+.main-form .actions input[type="text"]:-moz-placeholder { color: #bbbbbb; font: 1em bebasneue-bold, Arial, sans-serif; }
+.main-form .actions input[type="text"]::-moz-placeholder { color: #bbbbbb; font: 1em bebasneue-bold, Arial, sans-serif; }
+.main-form .actions input[type="text"]:-ms-input-placeholder { color: #bbbbbb; font: 1em bebasneue-bold, Arial, sans-serif; }
+.main-form .actions input[type="text"]::-webkit-input-placeholder { color: #bbbbbb; font: 1em bebasneue-bold, Arial, sans-serif; }
+.main-form .actions input[type="submit"] { background: url(../img/form-btn-bg.png) no-repeat; background-size: 100% 100%; border: 0; color: #fff; cursor: pointer; font: 2.375em bebasneue-bold, Arial, sans-serif; outline: 0; padding: 19px 120px; text-align: center; }
+.main-form .actions input[type="submit"]:hover { color: #ccc; }
+
+@media (max-width: 1110px) { nav .container { padding: 0; }
+  header .container { padding: 50px 5%; }
+  .container { padding: 0 5%; } }
+@media (max-width: 940px) { body { font-size: 14px; }
+  .logo { float: none; }
+  header .container { padding: 40px 0 20px; text-align: center; }
+  .feedback { float: none; margin: 20px 0; width: 100%; }
+  .feedback p { display: inline-block; margin: 0 20px; text-align: center; vertical-align: middle; }
+  .feedback a { vertical-align: middle; }
+  .content { padding: 45px 0 40px; }
+  .content-banner { float: none; padding: 0; text-align: center; width: 100%; }
+  .content-info { float: none; margin-top: 40px; padding: 0 20px; text-align: center; width: 100%; } }
+@media (max-width: 768px) { .is-active:after { display: none; }
+  nav { background-size: auto auto; }
+  .hamburger { display: inline-block; padding: 15px 20px 5px; }
+  .hamburger:hover .line { border-color: #bbb; }
+  .line { border-bottom: 4px solid #fff; margin-bottom: 6px; width: 35px; }
+  .menujs { -moz-transition: height 0.3s linear; -o-transition: height 0.3s linear; -webkit-transition: height 0.3s linear; transition: height 0.3s linear; display: block; height: 0px; overflow: hidden; }
+  .menujs li { text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); background-color: #bbb; border-top: 1px solid #af8a8a; text-align: left; width: 100%; }
+  .menujs li:first-child { border-top: 0; }
+  .menujs li a { display: block; text-decoration: none; }
+  .slide-down { height: 282px; }
+  .main-form { padding-top: 30px; text-align: center; }
+  .main-form label { float: none; text-align: center; width: 100%; }
+  .main-form label:after { display: none; }
+  .main-form .actions { float: none; margin-top: 15px; width: 100%; } }
+@media (max-width: 560px) { .content-banner { padding: 0 30px; }
+  .content-info { font-size: 2.5em; padding: 0; }
+  .main-form .actions { float: right; text-align: center; }
+  .main-form .actions input[type="text"] { display: block; padding-left: 0; text-align: center; width: 100%; }
+  .main-form .actions input[type="submit"] { background-position: center; border-radius: 6px; height: 70px; padding: 0; text-align: center; width: 300px; }
+  .logo { border: 0; display: block; padding: 0 0 15px 0; }
+  .description { display: block; padding: 0; width: 100%; }
+  .feedback { margin: 10px 0; }
+  .feedback p { display: block; margin: 0; padding-bottom: 10px; width: 100%; } }
+@media (max-width: 320px) { header .container { padding: 30px 10px; }
+  .container { padding: 0 10px; } }

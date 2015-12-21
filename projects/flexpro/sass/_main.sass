@@ -1,0 +1,621 @@
+$link-color: #4585bb
+
+sub
+	vertical-align: bottom
+	font-size: 50%
+
+*, *:after, *:before
+	+box-sizing(border-box)
+
+.clearfix
+	&:before, &:after
+		content: " "
+		display: table
+
+.left 
+	float: left
+
+.right
+	float: right
+
+body
+	font-family: 'Open Sans', sans-serif
+	min-width: 960px
+
+.open	
+	display: block !important
+
+.pop-up
+	display: none
+
+.black_overlay
+	+opacity(0.55)
+	background-color: #000
+	display: none
+	height: 100%
+	left: 0
+	position: fixed
+	top: 0
+	width: 100%
+	z-index: 100
+
+.pop-up-wrap
+	+border-radius(6px)
+	background-color: #fff
+	border: 1px solid #d5d5d5
+	height: 415px
+	left: 50%
+	margin-left: -260px
+	position: absolute
+	top: 190px
+	width: 520px
+	z-index: 101
+
+.pop-up-head
+	border-bottom: 1px solid #d5d5d5
+	height: 40px
+	padding: 10px 15px
+	h2
+		color: #383838
+		font: 18px 'Open Sans', sans-serif
+	a
+		i
+			background: url(../img/icons/out.png) no-repeat
+			height: 13px
+			margin: 0
+			width: 13px
+
+.pop-up-body
+	padding: 20px 25px
+	span
+		color: #f60606
+	form
+		input
+			display: block
+
+.top-form
+	label
+		float: right
+		font-size: 13px
+		line-height: 22px
+		input
+			border: 1px solid #dddddd 
+			float: right
+			height: 22px
+			margin-bottom: 12px
+			margin-left: 4px
+			width: 290px
+
+.bot-form
+	float: right
+	width: 290px
+	text-align: left
+	margin-top: 12px
+	.agreement
+		font-size: 12px
+		a
+			border-bottom: 1px dashed #0a6eb1
+			color: $link-color
+			margin-bottom: 10px
+			text-decoration: none
+	
+	.check
+		color: #828282
+		font-size: 11px
+		line-height: 25px
+		input
+			display: inline-block
+			vertical-align: middle
+	
+	.reg-btn
+		+border-radius(4px)
+		background-color: #107fc9
+		border: 1px solid #0b649f
+		color: #fff
+		cursor: pointer
+		font-size: 14px
+		margin-top: 10px
+		padding: 14px 16px
+		&:hover
+			#0e6eae
+
+.pop-up-social
+	color: #383838
+	font-size: 12px
+	h2
+		font-weight: bold
+		margin-top: 15px
+	p
+		margin-bottom: 15px
+	img
+		margin-right: 20px
+
+.container
+	margin: auto
+	max-width: 960px
+	min-width: 960px
+	width: 100%
+
+i
+	display: inline-block
+	margin-right: 5px
+	vertical-align: middle
+
+.top-line
+	height: 30px
+	background-color: #f6f6f6
+	border-bottom: 1px solid #d5d5d5
+	ul
+		li
+			float: left
+			a
+				border-right: 1px solid #595959
+				color: #595959
+				font: 12px/30px 'Open Sans', sans-serif
+				padding: 0 16px
+				text-decoration: none
+			&:first-child
+				a
+					padding-left: 0
+			&:last-child
+				a
+					border: 0
+
+.user
+	li
+		a
+			border: 0
+			i
+				height: 13px
+				width: 13px
+			.reg
+				background: url(../img/icons/reg.png) no-repeat
+			.login
+				background: url(../img/icons/log.png) no-repeat
+
+.head
+	height: 100px
+	padding-top: 20px
+
+.head-item
+	color: #3f3f3f
+	display: inline-block
+	font: 13px 'Open Sans', sans-serif
+	margin-right: 35px
+	vertical-align: middle
+
+.contact
+	h2
+		font: bold 18px 'Open Sans', sans-serif
+		i
+			background: url(../img/icons/phone.png) no-repeat
+			height: 17px
+			width: 17px
+	p
+		margin: 10px 0 0
+	a
+		color: $link-color
+
+.search
+	max-width: 300px
+	position: relative
+	width: 48%
+	input[type=search]
+		border: 1px solid #d5d5d5
+		color: #353535
+		font: 14px 'Open Sans', sans-serif
+		height: 30px
+		width: 100%
+		&:hover
+			outline: 0
+	input[type=submit]
+		background: url(../img/icons/search-ic.png) no-repeat center
+		background-color: #107fc9
+		border: 1px solid #0b649f
+		height: 30px
+		padding: 0
+		position: absolute
+		right: 0
+		top: 0
+		width: 30px
+		&:hover
+			background-color: #116eac
+			cursor: pointer
+
+.basket
+	margin-right: 0
+	a
+		color: #3f3f3f
+		font: bold 18px 'Open Sans', sans-serif
+		text-decoration: none
+		i
+			height: 17px
+			width: 17px
+			background: url(../img/icons/basket.png) no-repeat
+	p
+		span
+			color: $link-color
+			margin-left: 15px
+
+.nav
+	background-color: #107fc9
+	border-bottom: 1px 0 solid #0b649f
+	border-top: 1px 0 solid #0b649f
+	height: 35px
+	margin-bottom: 13px
+	ul
+		li
+			float: left
+			a
+				border-right: 1px solid #0b649f
+				color: #fff
+				display: block
+				font: 12px/35px 'Open Sans', sans-serif
+				height: 35px
+				padding: 0 8px
+				text-decoration: none
+				&:hover
+					text-decoration: underline
+			&:first-child
+				a
+					border-left: 1px solid #0b649f
+			&:last-child
+				float: right
+
+.slider-item
+	background: url(../img/slide1-bg.jpg)
+	height: 295px
+	padding: 70px 0 0 35%
+	width: 100%
+	p
+		color: #fff
+		font: 13px 'Open Sans', sans-serif
+		span
+			display: inline-block
+			font-size: 25px
+			font-weight: bold
+			padding: 15px 0
+	a
+		+border-radius(6px)
+		background-color: #ff010b
+		border: 1px solid #9e1633
+		color: #fff
+		display: inline-block
+		font: bold 19px/40px 'Open Sans', sans-serif
+		height: 40px
+		padding: 0 35px
+		text-decoration: none
+.slider-top
+	// position: relative
+	.slick-prev,
+	.slick-next
+		border: none
+		cursor: pointer
+		font-size: 0
+		height: 85px
+		line-height: 0
+		margin-top: -42px
+		outline: 0
+		position: absolute
+		top: 50%
+		width: 46px
+		z-index: 1
+	.slick-prev
+		background: url(../img/icons/arrow-prev.png) 0 0 no-repeat
+		left: -2px
+	.slick-next
+		background: url(../img/icons/arrow-next.png) 0 0 no-repeat
+		right: -1px
+.slider-logo
+	// position: relative
+	.slick-prev,
+	.slick-next
+		border: none
+		cursor: pointer
+		font-size: 0
+		height: 26px
+		line-height: 0
+		margin-top: -13px
+		outline: 0
+		position: absolute
+		top: 50%
+		width: 20px
+		z-index: 1
+	.slick-prev
+		background: url(../img/icons/min-arrow-prev.png) 0 0 no-repeat
+		left: -2px
+		&:hover		
+			background: url(../imgicons//min-arrow-prev-c.png)
+	.slick-next
+		background: url(../img/icons/min-arrow-next.png) 0 0 no-repeat
+		right: -5px
+		&:hover
+			background: url(../img/icons/min-arrow-next-c.png)
+.slider-logo
+	padding: 25px 10px
+
+.slider-logo-item
+	outline: none
+	cursor: pointer
+	img
+		height: auto
+		max-height: 100%
+		max-width: 100%
+		width: auto
+
+.content-wrap,
+	width: 100%
+	max-width: 715px
+.topic
+	height: 25px
+	margin-right: 2%
+	h2
+		font: 18px 'Open Sans', sans-serif
+		color: #393939
+	a
+		font: 14px 'Open Sans', sans-serif
+		color: $link-color
+.content-item
+	+border-radius(4px)
+	border: 1px solid #d5d5d5
+	float: left
+	margin: 2% 2% 0 0
+	padding-top: 45px
+	position: relative
+	text-align: center
+	width: 31.33%
+	img.new
+		left: -5px
+		position: absolute
+		top: -4px
+	img
+		margin-bottom: 17px
+	a
+		color: $link-color
+		display: inline-block
+		font: bold 12px 'Open Sans', sans-serif
+
+.buy
+	background-color: #f6f6f6
+	height: 68px
+	margin-top: 15px
+	text-align: left
+	.item-info
+		display: inline-block
+		padding: 10px 0 0 20px
+		vertical-align: middle
+		width: 56%
+		.old-price
+			color: #c54f46
+			font: bold 13px/13px 'Open Sans', sans-serif
+			text-decoration: line-through
+		.price
+			font: 600 28px 'Open Sans', sans-serif
+			color: #393939
+	a
+		color: #fff
+		display: block
+		font: 14px/30px 'Open Sans', sans-serif
+		margin: 18px 8px 18px 0
+		vertical-align: middle
+.sold
+	@extend .buy
+	a
+		color: #878686
+	.item-info
+		padding-left: 10px
+		a
+			border-bottom: 1px dashed $link-color
+			color: $link-color
+			display: inline
+			font: 14px/14px 'Open Sans', sans-serif
+			margin: 0
+			text-decoration: none
+.buy-btn
+	+border-radius(4px)
+	background-color: #107fc9
+	border: 1px solid #0b649f
+	float: right
+	height: 30px
+	text-align: center
+	text-decoration: none
+	width: 80px
+	i
+		background: url(../img/icons/white-low-basket.png) no-repeat
+		height: 13px
+		width: 13px
+	&:hover
+		background-color: #0b649f
+.sold-btn
+	@extend .buy-btn
+	background-color: #e6e6e6
+	border-color: #878686
+	i
+		background: url(../img/icons/grey-low-basket.png) no-repeat
+	&:hover
+		background-color: #dcdad9
+.content-info-wrap
+	margin: 2% 2% 0 0
+	padding-bottom: 150px
+.top-popular
+	+border-radius(4px)
+	background: url(../img/top-pop-bg.png) no-repeat left
+	border: 1px solid #d5d5d5
+	height: 300px
+	width: 100%
+	h2
+		color: #393939
+		font: 18px 'Open Sans', sans-serif
+		margin: 10px 20px 0
+	table
+		td
+			padding: 10px 0 10px 20px
+			img
+				padding: 20px
+			&:nth-child(1)
+				width: 40%
+			&:nth-child(2n)
+				width: 35%
+			&:nth-child(3n)
+				width: 25%
+		a
+			color: $link-color
+			display: block
+			font: bold 14px 'Open Sans', sans-serif
+		p
+			color: #535356
+			font: bold 14px 'Open Sans', sans-serif
+.article
+	color: #4e4d4d
+	font: 14px/20px 'Open Sans', sans-serif
+	margin-top: 20px
+	padding-right: 2%
+	text-align: left
+	h2
+		font-size: 20px
+		padding-bottom: 12px
+
+.side-bar
+	max-width: 240px
+	width: 40%
+
+.s-bar-item
+	background-color: #f6f6f6
+	font: 13px 'Open Sans', sans-serif
+	margin-bottom: 17px
+	padding: 10px 15px 12px 20px
+	h3
+		color: #383838
+		font-size: 18px
+	a
+		color: $link-color
+	img
+		float: left
+		height: 35px
+		width: 40px
+	.sub-item
+		border-bottom: 1px dashed #bcbcbc
+		margin-bottom: 10px
+		padding-bottom: 10px
+	p.all
+		text-align: right
+.history
+	.sub-item
+		font: 12px 'Open Sans', sans-serif
+.news
+	time
+		color: #777777
+		display: block
+		font-size: 11px
+.delivery
+	label
+		color: #be2d22
+		font-size: 18px
+	input[type="email"]
+		border: 1px solid #dcdcdc
+		color: #353535
+		display: inline-block
+		font: 12px 'Open Sans', sans-serif
+		height: 20px
+		width: 80%
+	input[type="submit"]
+		+background-image(linear-gradient(to top, #c80212, #eb0315))
+		border-bottom: 1px solid #c90212
+		border-left: 1px solid #ff8c9e
+		border-right: 1px groove #c90212
+		border-top: 1px solid #ff8c9e
+		color: #fff
+		display: inline-block
+		height: 20px
+		width: 15%
+		&:hover
+			cursor: pointer
+.social
+	margin-bottom: 17px
+	img
+		height: auto
+		width: 100%
+
+.footer
+	clear: both
+	color: #fff
+
+.bot-line
+	background-color: #0866a5
+	border-bottom: 1px solid #0b649f
+	height: 22px
+	p
+		font: 12px/22px 'Open Sans', sans-serif
+		span
+			font-weight: bold
+
+.bot-nav
+	background-color: #107fc9
+	height: 112px
+	padding: 9px 0
+	.b-nav-item
+		border-right: 1px dotted #fff
+		float: left	
+		height: 95px
+		padding: 12px 30px
+		&:first-child
+			padding-left: 0
+	.info-list
+		li
+			a
+				color: #fff
+				font-size: 12px
+				text-decoration: none
+			&:first-child
+				a
+					font-size: 14px
+					font-weight: bold
+	.contact
+		color: #fff
+		font: 13px 'Open Sans', sans-serif
+		padding: 20px 30px 0 60px
+		h2
+			font: bold 18px 'Open Sans', sans-serif
+			i
+				background: url(../img/icons/phone-white.png) no-repeat
+				height: 17px
+				width: 17px
+		a
+			color: #fff
+	.banners
+		border-right: 0
+		float: right
+		padding-right: 0
+		width: 220px
+		img
+			display: inline-block
+.bot-social
+	height: 80px
+	padding-top: 20px
+	.pay-forms
+		a
+			display: inline-block
+			margin-right: 35px
+			vertical-align: middle
+.networks
+	font-size: 0
+	line-height: 0
+	a
+		i
+			background: url(../img/bot-soc-sprite.jpg)
+			display: inline-block
+			height: 24px
+			vertical-align: middle
+			width: 24px
+			&.soc2
+				background-position: -24px 0	
+			&.soc3
+				background-position: -48px 0
+			&.soc4
+				background-position: -72px 0
+			&.soc5
+				background-position: -96px 0
+			&.soc6
+				background-position: -120px 0
+			&.soc7
+				background-position: -144px 0
