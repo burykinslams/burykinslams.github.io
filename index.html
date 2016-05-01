@@ -1,223 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>portfolio</title>
-	<style>
-	@font-face {
-		font-family: exo-thin;
-		src: url('font/exo-thin-webfont.eot'); /* IE9 Compat Modes */
-		src: url('font/exo-thin-webfont.eot?#iefix') format('embedded-opentype'),
-			 url('font/exo-thin-webfont.woff2') format('woff2'),
-			 url('font/exo-thin-webfont.woff') format('woff'),
-			 url('font/exo-thin-webfont.ttf')  format('truetype'),
-			 url('font/exo-thin-webfont.svg#svgexo-thin-webfont') format('svg');
-		}
-	@font-face {
-		font-family: exo-medium;
-		src: url('font/exo-medium-webfont.eot'); /* IE9 Compat Modes */
-		src: url('font/exo-medium-webfont.eot?#iefix') format('embedded-opentype'),
-			 url('font/exo-medium-webfont.woff2') format('woff2'),
-			 url('font/exo-medium-webfont.woff') format('woff'),
-			 url('font/exo-medium-webfont.ttf')  format('truetype'),
-			 url('font/exo-medium-webfont.svg#svgexo-thin-webfont') format('svg');
-		}
-		body,html {
-			margin: 0;
-			padding: 0;
-			height: 100%;
-		}
-		.clearfix:after {
-			content: "";
-			display: table;
-			clear: both;
-		}
-		.content{
-			background: url(img/bg.jpg);
-			width: 100%;
-			height: 100%;
-			background-size: cover;
-			/*padding-top: 350px;*/
-			box-sizing: border-box;
-		}
-		/*------------MY INFO--------------*/
-		.my-info {
-			box-sizing: border-box;
-			/*margin-top: -294px;*/
-			text-align: center;
-			color: #282828;
-			font: 1em 'exo-thin', Arial, sans-serif;
-			padding: 60px 0;
-			height: 55%;
-		}
-		.avatar {
-			height: 100px;
-			width: 100px;
-			margin: auto;
-		}
-		.avatar img {
-			border-radius: 50%;
-			width: 100%;
-			height: auto;
-		}
-		.name {
-			font-size: 2em;
-			margin: 20px;
-		}
-		.position {
-			margin: 10px 0 0;
-		}
-		.contact-link {
-			color: #fff;
-			text-decoration: none;
-			display: inline-block;
-			padding: 10px 30px;
-			background-color: #ff6d6d;
-			border-radius: 4px;
-			margin: 20px 0 0;
-			font-family: 'exo-medium';
-		}
-		.contact-link:hover {
-			background-color: #D85555;
-		}
-		/*------------NAV BAR--------------*/
-		.nav-bar {
-			height: 24px;
-			width: 100%;
-			background-color: rgba(0,0,0, .4);
-			border-radius: 4px 4px 0 0;
-			text-align: center;
-			font: 12px/24px 'exo-medium', Arial, sans-serif;
-			color: rgba(255,255,255, .5);
-		}
-		.nav-bar-menu {
-			float: right;
-			margin: 5px 10px;
-		}
-		.nav-bar-cntrl {
-			float: left;
-			margin: 8px 10px;
-		}
-		.nav-bar-dash {
-			background-color: rgba(255,255,255, .5);
-			width: 16px;
-			height: 2px;
-			margin: 2px;
-		}
-		.nav-bar-circle {
-			float: left;
-			margin-left: 2px;
-			height: 4px;
-			width: 4px;
-			border-radius: 50%;
-			border: 2px solid rgba(255,255,255, .5);
-		}
-		/*------------MY INFO--------------*/
-		.my-works {
-			background: url(img/bg.jpg);
-			width: 100%;
-			max-width: 1024px;
-			height: 45%;
-			/*height: 100%;*/
-			background-size: cover;
-			margin: auto;
-		}
-		.my-works-item {
-			padding-top: 50px;
-			text-align: center;
-			font: 1.6em 'exo-medium', Arial sans-serif;
-			float: left;
-			width: 25%;
-			box-sizing: border-box;
-		}
-		.item-descr {
-			font: 0.7em/1.2em 'exo-thin', Arial, sans-serif;
-			margin: 10px;
-			}
-		.item-link {
-			color: #fff;
-			text-decoration: none;
-			display: inline-block;
-			padding: 5px 20px;
-			background-color: #ff6d6d;
-			border-radius: 4px;
-			margin: 10px 0;
-			font: 0.5em 'exo-medium';
-		}
-		.item-link:hover {
-			background-color: #D85555;
-		}
-		@media (max-width: 768px) {
-			.my-info {
-				height: 50%
-			}
-			.my-works {
-				height: 50%
-			}
-			.my-works-item {
-				padding-top: 30px;
-				width: 50%;
-			}
-		}
-		@media (max-width: 380px) {
-			.my-info {
-				height: 53%
-			}
-			.my-works {
-				height: auto;
-			}
-			.my-works-item {
-				padding-top: 30px;
-				width: 100%;
-			}
-		}
-	</style>
+    <meta charset="UTF-8">
+    <title> P1ortfolio</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="img/icon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/icon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/icon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/icon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/icon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/icon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/icon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/icon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/icon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/icon/favicon-16x16.png">
+    <link rel="manifest" href="img/icon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/icon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <style>
+        @font-face {
+            font-family: exo-thin;
+            src: url('font/exo-thin-webfont.eot'); /* IE9 Compat Modes */
+            src: url('font/exo-thin-webfont.eot?#iefix') format('embedded-opentype'),
+            url('font/exo-thin-webfont.woff2') format('woff2'),
+            url('font/exo-thin-webfont.woff') format('woff'),
+            url('font/exo-thin-webfont.ttf')  format('truetype'),
+            url('font/exo-thin-webfont.svg#svgexo-thin-webfont') format('svg');
+        }
+        @font-face {
+            font-family: exo-medium;
+            src: url('font/exo-medium-webfont.eot'); /* IE9 Compat Modes */
+            src: url('font/exo-medium-webfont.eot?#iefix') format('embedded-opentype'),
+            url('font/exo-medium-webfont.woff2') format('woff2'),
+            url('font/exo-medium-webfont.woff') format('woff'),
+            url('font/exo-medium-webfont.ttf')  format('truetype'),
+            url('font/exo-medium-webfont.svg#svgexo-thin-webfont') format('svg');
+        }
+        body,html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .content{
+            background: url(img/bg.jpg);
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            /*padding-top: 350px;*/
+            box-sizing: border-box;
+        }
+        .my-info {
+            box-sizing: border-box;
+            /*margin-top: -294px;*/
+            text-align: center;
+            color: #282828;
+            font: 1em 'exo-thin', Arial, sans-serif;
+            padding: 60px 0;
+            height: 55%;
+        }
+        .avatar {
+            height: 150px;
+            width: 150px;
+            margin: auto;
+        }
+        .avatar img {
+            border-radius: 50%;
+            width: 100%;
+            height: auto;
+        }
+        .name {
+            font-size: 2em;
+            margin: 5px;
+        }
+        .position {
+            margin: 5px 0 0;
+        }
+        .contact-link {
+            color: #fff;
+            text-decoration: none;
+            display: inline-block;
+            padding: 10px 30px;
+            background-color: #ff6d6d;
+            border-radius: 4px;
+            margin: 20px 0 0;
+            font-family: 'exo-medium', Arial, sans-serif;
+        }
+        .contact-link:hover {
+            background-color: #D85555;
+        }
+        /*------------NAV BAR--------------*/
+        .nav-bar {
+            height: 24px;
+            width: 100%;
+            background-color: rgba(0,0,0, .4);
+            border-radius: 4px 4px 0 0;
+            text-align: center;
+            font: 12px/24px 'exo-medium', Arial, sans-serif;
+            color: rgba(255,255,255, .5);
+        }
+        .nav-bar-menu {
+            float: right;
+            margin: 5px 10px;
+        }
+        .nav-bar-cntrl {
+            float: left;
+            margin: 8px 10px;
+        }
+        .nav-bar-dash {
+            background-color: rgba(255,255,255, .5);
+            width: 16px;
+            height: 2px;
+            margin: 2px;
+        }
+        .nav-bar-circle {
+            float: left;
+            margin-left: 2px;
+            height: 4px;
+            width: 4px;
+            border-radius: 50%;
+            border: 2px solid rgba(255,255,255, .5);
+        }
+        .my-works {
+            background: url(img/bg.jpg);
+            width: 100%;
+            max-width: 1024px;
+            height: 45%;
+            border-radius: 4px 4px 0 0 ;
+            background-size: cover;
+            margin: auto;
+        }
+        .my-works-item {
+            padding-top: 50px;
+            text-align: center;
+            font: 1.6em 'exo-medium', Arial sans-serif;
+            float: left;
+            width: 25%;
+            box-sizing: border-box;
+        }
+        .item-descr {
+            font: 0.7em/1.2em 'exo-thin', Arial, sans-serif;
+            margin: 10px;
+        }
+        .item-link {
+            color: #fff;
+            text-decoration: none;
+            display: inline-block;
+            padding: 5px 20px;
+            background-color: #ff6d6d;
+            border-radius: 4px;
+            margin: 10px 0;
+            font: 0.5em 'exo-medium';
+        }
+        .item-link:hover {
+            background-color: #D85555;
+        }
+        @media (max-width: 768px) {
+            .my-info {
+                height: 50%
+            }
+            .my-works {
+                height: 50%
+            }
+            .my-works-item {
+                padding-top: 30px;
+                width: 50%;
+            }
+        }
+        @media (max-width: 380px) {
+            .my-info {
+                height: 53%
+            }
+            .my-works {
+                height: auto;
+            }
+            .my-works-item {
+                padding-top: 30px;
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
-	<div class="content">
-		<div class="my-info">
-			<div class="avatar">
-				<img src="img/avatar.jpg" alt="">
-			</div>
-			<p class="name">Burykin Alexander</p>
-			<p class="position">Front-End Developer</p>
-			<a href="mailto:burykinslams@gmail.com" class="contact-link">contact me</a>
-		</div>
-		<div class="my-works clearfix">
-			<div class="nav-bar clearfix">
-				<div class="nav-bar-menu">
-					<div class="nav-bar-spare nav-bar-dash"></div>
-					<div class="nav-bar-spare nav-bar-dash"></div>
-					<div class="nav-bar-spare nav-bar-dash"></div>
-				</div>
-				<span>my-works</span>
-				<div class="nav-bar-cntrl">
-					<div class="nav-bar-spare nav-bar-circle"></div>
-					<div class="nav-bar-spare nav-bar-circle"></div>
-					<div class="nav-bar-spare nav-bar-circle"></div>	
-				</div>
-			</div>
-			<div class="my-works-item">
-				<div class="item-name">Golden</div>
-				<div class="item-descr">Adaptive LP</div>
-				<a href="projects/golden/index.html" class="item-link">view</a>
-			</div>
-			<div class="my-works-item">
-				<div class="item-name">Flex-Pro</div>
-				<div class="item-descr">Landing Page (Sass)</div>
-				<a href="projects/flexpro/index.html" class="item-link">view</a>
-			</div>
-			<div class="my-works-item">
-				<div class="item-name">Marine</div>
-				<div class="item-descr">Landing Page (Sass)</div>
-				<a href="projects/marine/index.html" class="item-link">view</a>
-			</div>
-			<div class="my-works-item">
-				<div class="item-name">Nova</div>
-				<div class="item-descr">Promo Block</div>
-				<a href="projects/nova/index.html" class="item-link">view</a>
-			</div>
-		</div>
-	</div>
+<div class="content">
+    <div class="my-info">
+        <div class="avatar">
+            <img src="img/avatar.jpg" alt="">
+        </div>
+        <p class="name">Alexander Burykin</p>
+        <p class="position">Front-End Developer</p>
+        <a href="mailto:alexburykin@i.ua" class="contact-link">contact me</a>
+    </div>
+    <div class="my-works clearfix">
+        <div class="nav-bar clearfix">
+            <div class="nav-bar-menu">
+                <div class="nav-bar-spare nav-bar-dash"></div>
+                <div class="nav-bar-spare nav-bar-dash"></div>
+                <div class="nav-bar-spare nav-bar-dash"></div>
+            </div>
+            <span>my-works</span>
+            <div class="nav-bar-cntrl">
+                <div class="nav-bar-spare nav-bar-circle"></div>
+                <div class="nav-bar-spare nav-bar-circle"></div>
+                <div class="nav-bar-spare nav-bar-circle"></div>
+            </div>
+        </div>
+        <div class="my-works-item">
+            <div class="item-name">Golden</div>
+            <div class="item-descr">Adaptive LP</div>
+            <a href="projects/golden/index.html" class="item-link">view</a>
+        </div>
+        <div class="my-works-item">
+            <div class="item-name">Flex-Pro</div>
+            <div class="item-descr">Landing Page (Sass)</div>
+            <a href="projects/flexpro/index.html" class="item-link">view</a>
+        </div>
+        <div class="my-works-item">
+            <div class="item-name">Marine</div>
+            <div class="item-descr">Landing Page (Sass)</div>
+            <a href="projects/marine/index.html" class="item-link">view</a>
+        </div>
+        <div class="my-works-item">
+            <div class="item-name">Nova</div>
+            <div class="item-descr">Promo Block</div>
+            <a href="projects/nova/index.html" class="item-link">view</a>
+        </div>
+    </div>
+</div>
 </body>
 </html>
